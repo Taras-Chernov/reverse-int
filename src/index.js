@@ -1,7 +1,6 @@
 module.exports = function reverse(n) {
-  n = n < 0 ? -n : n;
-  const arr = Array.from(String(n));
-  arr.reverse();
-  const reversN = Number(arr.join(''));
-  return reversN;
+  const x = n < 0 ? -n : n;
+  const str = String(x);
+  const result = Number(str.split('').reverse().join(''));
+  return result;
 };
